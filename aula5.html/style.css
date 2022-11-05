@@ -1,0 +1,141 @@
+/* Título */
+.title {
+   border: 2px solid black;
+   padding: 0px;
+   margin: 1px;
+   text-align: center;
+   font-family: 'title';
+   font-size: 100%;
+   opacity: 0;
+   transform: translatey(-30px);
+}
+.title{
+    animation-name: slide;
+    animation-duration: 3s ;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    to {
+        transform: translatey(0);
+        opacity: 1;
+    }
+    10%{
+        border-color: blue ;
+    }
+    25%{
+        border-color: yellow ;
+    }
+    50%{
+        border-color: red ;
+    }
+    100%{
+        border-color: black; 
+    }
+}
+/* F título */
+
+/* Menu */
+.menu {
+    font-family: Arial;
+}
+header {
+    background-color: rgb(0, 32, 32);
+    border: 2px solid black;
+}
+
+nav ul {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 1px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+
+}
+ nav ul li a:hover {
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid black;
+ }
+ /* F menu */
+
+/* Noticia */
+.noti{
+   border: 3px solid black;
+   padding-left: 5px;
+}
+
+article h1{
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+#amigo{
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+article p{
+    font-size: 15px;
+    margin-bottom: -15px;
+}
+aside{
+    float: right;
+    border: 1px solid black;
+    padding-left: 3px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+.B{
+    background-color: white;
+    border: 1px solid white; }
+.B:visited {
+    background-color: lightblue;
+    border-color: cyan;
+    color: darkblue; }
+/* Footer */
+footer{
+    background-color:rgb(0, 32, 32);
+    color: white;
+    border: 2px solid black;
+}
+#autor{
+    font-family: 'title';
+}
+/* F footer*/
+
+
+/* F noticia */
+
+/* Input */
+.nome{
+    border-color: green;   
+}
+.sobren{
+    border-color: green;
+}
+.ajudar{
+    color: green;
+    border: 2px solid green;
+}
+.cancelar{
+    color: red;
+    border: 2px solid red;
+}
+/* F input */
+
+ /* Fontes */
+ @font-face {
+   font-family: 'title';
+   src: url('OldeEnglish.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ /* F fontes*/
